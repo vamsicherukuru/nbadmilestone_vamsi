@@ -1,0 +1,92 @@
+@import url('index.css');
+
+
+.card-b {
+    width: 30%;
+    text-align: center;
+    
+    color: white;
+    justify-content: space-between;
+  }
+
+
+
+.card {
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0px 16px 0 rgb(255, 255, 255);
+    cursor: pointer;
+    scale: 1.09;
+  }
+  .container {
+    padding: 2px 16px;
+  }
+
+.dis{
+  height: 100px;
+}
+.category_bg{
+  background-color: black;
+  color: white;
+  font-size: 15px;  
+}
+  .flocards{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+  .trade-desc{
+    border:1px solid white;
+  }
+  .trade-b-desc{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    
+  }
+  .flocards .card .container a{
+    color: white;
+  }
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    background-color: #333;
+   width: 90%;
+    padding: 15px;
+}
+div.scrollmenu h1{
+    font-size: 0.5em;
+    text-align: left;
+}
+  div.scrollmenu a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  background-color: aliceblue;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  div.scrollmenu a:hover {
+    /* background-color: rgb(1, 58, 1); */
+    background-color: #1fb622;
+    scale: 1.08;
+    transition: 0.5s;
+    color: white;
+    
+  }
+  div.scrollmenu::-webkit-scrollbar {
+    display: none;
+}

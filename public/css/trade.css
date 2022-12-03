@@ -1,0 +1,76 @@
+@import url('index.css');
+
+
+.card-b {
+    width: 30%;
+    text-align: center;
+    
+    color: white;
+    justify-content: space-between;
+  }
+h3{
+  color: black;
+}
+
+
+.card {
+    transition: 0.3s;
+    width: 80%;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    color: white;
+    height:fit-content;
+    justify-content: center;
+    text-align: left;
+  }
+  
+
+  .container {
+    padding: 2px 16px;
+  }
+
+
+
+  .flocards{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+  .trade-desc{
+    border:1px solid white;
+    color: black;
+    
+    font-size: 1.05em;
+  }
+  .trade-b-desc{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    
+  }
+  .flocards .card .container a{
+    color: white;
+  }
+  #pric{
+    float: right;
+    color: black;
+  }
+
+#imd{
+  width: 300px;
+}
+  button{
+    width: 100%;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  button:hover{
+    background-color: rgb(3, 79, 3);
+    color: white;
+    cursor: pointer;
+  }

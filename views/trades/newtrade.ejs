@@ -1,0 +1,61 @@
+
+<%- include('../partials/header.ejs') %>
+
+<link rel="stylesheet" href="/css/newTrade.css">
+
+<br>
+<div class="item_description">
+    <center>
+        <div class="card">
+
+            <div class="container">
+    
+                <center><h1 id="heading-form">Enter the Trade Details in the below form</h1>
+                <hr>
+                </center>
+                <form action="/trades" method="post">
+<label >Item Name: </label>
+                    <input type="text" name="item_name" required placeholder="Enter the Item Name" >
+                    <!-- <select name="item_category" >
+                        <option value="Laptops">Laptops</option>
+                        <option value="Mobiles">Mobiles</option>
+
+                        <option value="TVs">TVs</option>
+                        <option value="Cameras">Cameras</option>
+                      </select> -->
+                      <label >Item category: </label>
+
+                      <input type="text" name="item_category" required placeholder="item category">
+                      <label >Manufacturer: </label>
+
+                    <input type="text" name="manufacturer" required placeholder="manufacturer">
+                    
+                    <label >Enter the image URL below: </label>
+
+                    <input type="url" name="image" required placeholder="Paste the image url here">
+
+
+                    <label >Product Status: </label>
+
+                      <select name="status" required >
+                        <option value="In Stock">In Stock</option>
+                        <option value="Out of Stock">Out of Stock</option>
+
+                        <option value="Discontinued">Discontinued</option>
+                      </select>
+                      <label >Product Details: </label>
+
+                    <input type="text" name="details" required  placeholder="enter the description">
+                    <label >Price:  </label>
+
+                    <input type="text" name="price" required  placeholder="price">
+                    <input type="submit"  value="submit">
+                </form>       
+            </div>
+    
+        </div>
+    </center>
+</div>
+    
+
+<%- include('../partials/footer.ejs') %>

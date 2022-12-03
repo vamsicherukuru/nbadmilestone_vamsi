@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST BUY</title>
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <link rel="stylesheet" href="/css/trade.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+        
+        </style>
+</head>
+<body>
+    <header>
+        <a href="/"><h1>JUST BUY</h1></a>
+
+       <div class="user_specific">
+        <ul>
+            <%if(!user){%>
+            <li><a href="/users/login">Login</a>
+            </li>
+            <li><a href="/users/new">Signup</a>
+            </li>
+            <% } else{%>
+            <li><a href="/users/logout">Logout</a>
+            </li>
+            <li><a href="/users/profile">My Profile  </a>
+            </li>
+            <% }%>
+        </ul>
+       </div>   
+        
+        <div id="site_navigation1">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/trades">Trades</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <%if(user){%>
+                  
+                        <li id="start"><a href="/trades/newtrade" >Start Trading</a></li>
+
+                        <% }%>
+            </ul>
+            
+        </div>
+        
+    </header>
+
+    
+    <%if(errorMessages.length > 0){
+        errorMessages.forEach(message=>{%>
+            <div class="error"><%=message%></div>
+        <%});
+    }%>
+
+    <%if(successMessages.length > 0){
+        successMessages.forEach(message=>{%>
+            <div class="success"><%=message%></div>
+        <%});
+    }%>
+
+  

@@ -1,0 +1,74 @@
+<%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="/css/trades.css">
+
+<br>
+<div class="main-container">
+
+<center>
+  <% if(categories.length > 0){%>
+  
+    <% categories.forEach(category=>{ %>
+        
+      <h1>Continue Shopping for <%=category%>..</h1>
+      <div class="scrollmenu">
+         <% trades.forEach(trade=>{ %>
+          
+         
+
+          <% if(trade.item_category ==category){ %>
+          <a href="/trades/<%= trade.id%>">
+              <img src="<%=trade.image%>" class="dis" alt="No Internet Connection">
+              <h3><b>  <%= trade.item_name %> </b></h3>
+          
+  
+          <p>Price:
+              $<%= trade.price%> & FREE Shipping.</p>
+  
+              <br>
+              <div class="category_bg"><p><%= trade.item_category%></p></div>
+          </a>
+
+          <% } %>
+
+         <% }) %>
+          
+          
+      </div>
+     
+
+
+
+<%}) %>
+
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%} else {%>
+      <h2>No items available</h2>
+      <%}%>
+
+
+
+
+  
+
+  </div>
+
+
+
+
+    
+    <%- include('../partials/footer.ejs') %>

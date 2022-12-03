@@ -1,0 +1,159 @@
+body{
+
+    background-color: black;
+    color: white;
+}
+/* .user_specific a{
+    pointer-events: none;
+} */
+
+.cenele{
+    display:contents; justify-content:center; text-align:center;
+}
+
+header h1{
+    color:white;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+    font-size: 1.3em;
+    border: 1px solid white;
+}
+header{
+    padding: 1px;
+    width: 100%;
+   
+}
+#main_content{
+    margin: 0;
+    top: 0;
+
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+header ul li{
+    float: left;
+
+}
+header ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#start{
+   float: right;
+   background-color: green;
+}
+#start a:hover{
+    background-color: rgb(1, 58, 1);
+}
+
+
+
+header ul li a:hover{
+    background-color: green;
+}
+
+.tagline_and_msg{
+    position: relative;
+    top: 30px;
+}
+.tagline_and_msg h2{
+    
+    font-size: 7em;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.tagline_and_msg p{
+    font-family: 'Cinzel', serif;
+}
+
+
+
+
+footer ul{
+    
+    list-style-type: none;
+    position: relative;
+
+    margin-top: 250px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+footer ul li{
+    float: left;
+
+}
+footer ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.user_specific{
+    float: right;
+    
+
+
+}
+.user_specific ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+
+.success {
+    background-color: rgba(108,192,112,0.7);
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+  }
+  
+  .error {
+    background-color: rgba(255,102,51,0.7);
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+  }
+
+
+
+
+  table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+    color: black;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+table th,
+table td {
+    padding: 12px 15px;
+}

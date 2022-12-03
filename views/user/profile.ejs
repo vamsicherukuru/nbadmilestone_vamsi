@@ -1,0 +1,48 @@
+<%- include('../partials/header.ejs')%>
+
+<h2>Welcome, <%= user.firstName +" "+ user.lastName%></h2>
+<% if(stories.length){ %>
+    <p>You have created the following trades..</p>
+
+   
+        <table>
+           <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Actions</th>
+                <th></th>
+            </tr>
+           </thead>
+            <% stories.forEach(story=>{ %>
+                <tbody>
+            <tr>
+                <td><p><%=story.item_name%></p></td>
+                <td>
+                   <%=story.item_category%>
+                </td>
+
+
+
+                <td> 
+                    <%=story.status%>
+                </td>
+                <td><a href="/trades/<%=story.id%>/">View</a></td>
+                
+            </tr>
+        </tbody>
+            <%});%>
+        </table>
+        
+       
+       
+   
+<%}else{%>
+    <p>You have not created any stories..</p>
+
+<%}%>
+
+</body>
+
+</html>

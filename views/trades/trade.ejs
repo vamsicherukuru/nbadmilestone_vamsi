@@ -1,0 +1,53 @@
+<%- include('../partials/header.ejs') %>
+
+   
+<br>
+<div class="item_description">
+    <center>
+        <div class="card">
+
+            <div class="container">
+    
+                <h3>Category: <%= item.item_category%></h3>
+                <img src="<%= item.image  %>" alt="" id="imd">
+
+                <h1 id="pric">Price: $<%= item.price %></h1>
+
+                <div class="trade-desc">
+                <h4><b><%= item.status %></b></h4>
+                <h3>Manufacturer: <%= item.manufacturer %></h3>    
+                <h5>Created By: <%= item.author.firstName %></h5>    
+
+                    <h3><b><%= item.item_name %></b></h3>
+                    
+                    <p>Details:</p>
+                    <ul>
+                        <li>
+                            <%=item.details%>
+                        </li>
+                      
+                    </ul>
+    
+              
+                </div>
+            </div>
+
+           <center> 
+            <% if(user == item.author._id){%>
+            <form>
+                <button  type="submit" formmethod="GET" formaction="/trades/<%= item.id%>/edit">EDIT</button>
+                <button  type="submit" formmethod="post" formaction="/trades/<%= item.id%>?_method=DELETE" >DELETE</button>
+        
+            </form>
+            <%}%>
+        </center>
+    
+        </div>
+    </center>
+</div>
+      
+
+
+    
+
+<%- include('../partials/footer.ejs') %>

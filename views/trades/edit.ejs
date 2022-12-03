@@ -1,0 +1,45 @@
+
+<%- include('../partials/header.ejs') %>
+
+<link rel="stylesheet" href="/css/newTrade.css">
+
+<br>
+<div class="item_description">
+    <center>
+        <div class="card">
+
+            <div class="container">
+    
+                <center><h1 id="heading-form">Edit form for Trade ID: <%= item.id  %></h1>
+                <hr>
+                </center>
+                     
+                  
+                  
+                  <form method="post" action="/trades/<%= item.id %>?_method=PUT">
+
+                    <label >Item Name: </label>
+                    <input type="text" name="item_name" required value="<%= item.item_name %>" >
+                    <label >Manufacturer: </label>
+                    <input type="text" name="manufacturer" required value="<%= item.manufacturer %>" >
+                    <label >Item Category </label>
+                    <input type="text" name="item_category" required value="<%= item.item_category %>" >
+                    <label >Price </label>
+                    <input type="text" name="price" required value="<%= item.price %>" >
+                    <label >Image URL</label>
+                    <input type="url" name="image" required value="<%= item.image %>" >
+                    <label >Product Details </label>
+                    <input type="text" name="details" minlength="5" required value="<%= item.details %>" >
+
+                    
+                    <button>Submit</button>
+                
+                </form>
+            </div>
+    
+        </div>
+    </center>
+</div>
+    
+
+<%- include('../partials/footer.ejs') %>

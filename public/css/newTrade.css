@@ -1,0 +1,114 @@
+@import url('index.css');
+
+
+.card-b {
+    width: 30%;
+    text-align: center;
+    
+    color: white;
+    justify-content: space-between;
+  }
+
+option{
+  font-size: 2em;
+}
+
+.card {
+    transition: 0.3s;
+    width: 80%;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    color: white;
+    height:fit-content;
+    justify-content: center;
+    text-align: left;
+  }
+  
+
+  
+
+
+
+  .flocards{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+  .trade-desc{
+    border:1px solid white;
+    color: black;
+    float: right;
+    font-size: 1.05em;
+  }
+  .trade-b-desc{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    
+  }
+  .flocards .card .container a{
+    color: white;
+  }
+  #pric{
+    float: right;
+    color: black;
+  }
+
+
+  #heading-form{
+    color: black;
+  }
+
+
+  form label{
+    color: black;
+    font-size: 1.5em;
+
+  }
+  input[type=text], input[type=url], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  #submit {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+  }
+  
+  #submit:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  input[type=submit]{
+    width: 100%;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  input[type=submit]:hover{
+    background-color: rgb(3, 79, 3);
+    color: white;
+    cursor: pointer;
+  }
